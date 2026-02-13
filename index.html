@@ -2,13 +2,143 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+                img-src 'self' https://i.pravatar.cc data:;
+                style-src 'self';
+                script-src 'self';
+                font-src 'self';
+                object-src 'none';
+                base-uri 'self';
+                form-action 'self';">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Modern responsive dashboard application with project management and announcements.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Dashboard App">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <div class="layout">
+        <aside class="sidebar" aria-label="Sidebar Navigation">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span>Dashboard</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+
+                <ul class="nav-bottom">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-top">
+                    <input type="search" placeholder="Search..." aria-label="Search">
+                    <div class="user-mini">
+                        <img src="https://i.pravatar.cc/40" alt="User avatar" loading="lazy">
+                        <span>Morgan Oakley</span>
+                    </div>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="welcome">
+                        <img src="https://i.pravatar.cc/70" alt="User avatar" loading="lazy">
+                        <div>
+                            <p>Hi there,</p>
+                            <h1>Morgan Oakley (@morgan)</h1>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                <section class="projects">
+                    <h2>Your projects</h2>
+
+                    <div class="project-grid">
+                        <article class="card">
+                            <h3>Super Cool Project</h3>
+                            <p>Project description placeholder text for layout realism.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Less Cool Project</h3>
+                            <p>Project description placeholder text for layout realism.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Impossible App</h3>
+                            <p>Project description placeholder text for layout realism.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Easy Peasy App</h3>
+                            <p>Project description placeholder text for layout realism.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Ad Blocker</h3>
+                            <p>Project description placeholder text for layout realism.</p>
+                        </article>
+
+                        <article class="card">
+                            <h3>Money Maker</h3>
+                            <p>Project description placeholder text for layout realism.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <aside class="right-panel">
+                    <section class="announcements">
+                        <h2>Announcements</h2>
+                        <div class="panel-card">
+                            <p><strong>Site Maintenance</strong><br>Scheduled updates this weekend.</p>
+                            <hr>
+                            <p><strong>Community Share Day</strong><br>Join our live event!</p>
+                            <hr>
+                            <p><strong>Updated Privacy Policy</strong><br>Review changes to terms.</p>
+                        </div>
+                    </section>
+
+                    <section class="trending">
+                        <h2>Trending</h2>
+                        <div class="panel-card">
+                            <div class="trend-item">@tegan - World Peace Builder</div>
+                            <div class="trend-item">@morgan - Super Cool Project</div>
+                            <div class="trend-item">@kendall - Life Changing App</div>
+                            <div class="trend-item">@alex - No Traffic Maker</div>
+                        </div>
+                    </section>
+                </aside>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
